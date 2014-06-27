@@ -7,8 +7,10 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<!--link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"-->
 	<link rel="stylesheet" href="css/jumbotron-narrow.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
@@ -19,56 +21,121 @@
 	<div class="container">
 	  <div class="header">
 	    <ul class="nav nav-pills pull-right">
-	      <li><a href="#">Home</a></li>
+	      <li><a href="index.html">Home</a></li>
 	      <li class="active"><a href="#">會員表單</a></li>
-	      <li><a href="#">購物車表單</a></li>
-	      <li><a href="#">登入表單</a></li>
+	      <li><a href="cars.html">購物車表單</a></li>
+	      <li><a href="sign-up.html">登入表單</a></li>
 	    </ul>
 	    <h3 class="text-muted">會員表單</h3>
 	  </div>
 		<!--form 從這裡開始-->
-		<form class="form-horizontal" role="form">
-  		
-	  		<div class="form-group form-group-lg">
-		    	<label class="col-sm-2 control-label" for="formGroupInputLarge">First name</label>
-		    	<div class="col-sm-10">
-		      		<input class="form-control" type="text" id="formGroupInputLarge">
-		  	  	</div>
-	  		</div>
+		<div class="jumbotron">
+			<form method="GET" class="form-horizontal row" role="form">
 
-	  		<div class="form-group form-group-sm">
-	  		 	<label class="col-sm-2 control-label" for="formGroupInputSmall">Last name</label>
-				<div class="col-sm-10">
-					<input class="form-control" type="text" id="formGroupInputSmall">
+				<div class="form-group">
+					<label class="col-sm-3 control-label  ">
+						<i class="glyphicon glyphicon-user"></i>
+						Gender
+					</label>
+					 	<div class="col-sm-9">
+					 		<label class="radio-inline pull-left">
+					 			<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+				 			</label>
+							<label class="radio-inline pull-left">
+								<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+							</label>
+						</div>
+					</label>
 				</div>
-			<div class="form-group form-group-lg">
-		    	<label class="col-sm-2 control-label" for="formGroupInputLarge">First name</label>
-		    	<div class="col-sm-10">
-		      	<input class="form-control" type="text" id="formGroupInputLarge">
-		  	  	</div>
-		  	  	<select class="form-control">...</select>
-	  		</div>
-	  		<div class="form-group form-group-sm">
-	  		 <label class="col-sm-2 control-label" for="formGroupInputSmall">Last name</label>
-	   		 <div class="col-sm-10">
-	    	 <input class="form-control" type="text" id="formGroupInputSmall">
-	    	</div>
 
 
+				<div class="form-group">
+			    	<label for="inputEmail3" class="col-sm-3 control-label">
+						<i class="fa fa-pencil"></i>	
+			    		First name</label>
+			    		<div class="col-sm-9">
+			      			<input type="First name" class="form-control" id="inputEmail3" placeholder="First name">
+			    		</div>
+			  	</div>
+
+			  	<div class="form-group">
+			    	<label for="inputPassword3" class="col-sm-3 control-label">
+						<i class="fa fa-pencil"></i>	
+			    		Last name</label>
+			    		<div class="col-sm-9">
+			      			<input type="Last name" class="form-control" id="inputPassword3" placeholder="Last name">
+			    		</div>
+			  	</div>
+				
+				<div class="form-group">
+			    	<label for="inputCompany name3" class="col-sm-3 control-label">
+			    		<i class="fa fa-map-marker"></i>	
+			    		Company name</label>
+			    		<div class="col-sm-9">
+			      			<input type="Company name" class="form-control" id="inputCompany name3" placeholder="Company name">
+			    		</div>
+			  	</div>
+
+				<div class="form-group">
+			    	<label for="inputAddress3" class="col-sm-3 control-label">
+			    		<i class="fa fa-home"></i>
+			    		Address
+			    	</label>
+			    		<div class="col-sm-9">
+			      			<input type="Address" class="form-control" id="inputAddress3" placeholder="Address">
+			    		</div>
+			  	</div>
+
+				<div class="form-group">
+			    	<label for="inputCountry3" class="col-sm-3 control-label">
+			    		<i class="fa fa-flag"></i>	
+			    		Country</label>
+					  	<div class="col-sm-9">
+						  	<select class="form-control">
+							  <option>TAIWAN</option>
+							  <option>JAPAN</option>
+							  <option>INDIA</option>
+							  <option>UNITE STATE</option>
+							  <option>GERMANY</option>
+							</select>	
+					  	</div>
+				</div>
+
+				<div class="form-group">
+			    	<label for="inputPhonenumber3" class="col-sm-3 control-label">
+			    		<i class="fa fa-phone"></i>	
+			    		Phonenumber</label>
+			    		<div class="col-sm-9">
+			      			<input type="Phonenumber" class="form-control" id="inputPhonenumber3" placeholder="Phonenumber">
+			    		</div>
+			  	</div>
+				<div class="form-group">
+				    <div class="col-sm-9 col-sm-offset-3">
+						<div class="checkbox pull-left">
+							  <label>
+							    <input type="checkbox">
+							    Option one is this and that&mdash;be sure to include why it's great
+							  </label>
+						</div>
+						<div class="checkbox disabled pull-left">
+							  <label>
+							    <input type="checkbox" value="" disabled>
+							    Option two is disabled
+							  </label>
+						</div>
+					</div>
+				</div>	
 
 
+				<div class="form-group">
+				    <p class="col-sm-9 col-sm-offset-3 ">
+				    	<button type="submit" class="btn btn-primary pull-left" >Continue</button>
+				    </p>
+				</div>
 
-	  		</div>
-		</form>
 
-
-
-
-
-	  <div class="footer">
-	    <p>© Company 2014</p>
-	  </div>
-
-	</div>
+			</form>
+		</div><!--jumbotron-->
+	</div><!--container-->
 </body>
 </html>

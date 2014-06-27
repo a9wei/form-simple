@@ -8,8 +8,9 @@
 	
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+	<!--link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"-->
 	<link rel="stylesheet" href="css/jumbotron-narrow.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
@@ -19,42 +20,54 @@
 	<div class="container">
 	  <div class="header">
 	    <ul class="nav nav-pills pull-right">
-	      <li><a href="#">Home</a></li>
-	      <li><a href="#">會員表單</a></li>
-	      <li><a href="#">購物車表單</a></li>
+	    	
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="user.html">會員表單</a></li>
+	      <li><a href="cars.html">購物車表單</a></li>
 	      <li class="active"><a href="#">登入表單</a></li>
+	     
 	    </ul>
 	    <h3 class="text-muted">登入表單</h3>
 	  </div>
 		<!--form 從這裡開始-->
 		<div class="jumbotron">
-			<form class="form-horizontal row" role="form" style="width:500px; margin: 0 auto">
+			<!--表單 GET: 方便, 可見度, 255 字元-->
+			<!--表單 POST: secret, 登入必備-->
+
+			<!--告知可能出現的預設狀況，供後端工程師看-->
+			<div class="alert alert-success" role="alert">succee! send</div>
+			<div class="alert alert-info" role="alert">pasword invalid</div>
+			<div class="alert alert-warning" role="alert">expired</div>
+			<div class="alert alert-danger" role="alert">empyp</div>
+
+			<form method="GET" class="form-horizontal row" role="form" style="margin: 0 auto">
 			  <p style="font-size: 35px;font-weight: bold">Please sign up</p>
 			  <div class="form-group">
+			  	<!--網格系統總共12等分！可一分再分再再分-->
 			    <div class="col-sm-12">
-			      <input type="email" class="form-control" id="inputEmail3" placeholder="Email address">
+			      <!--每個input都一定要加name，後端才有辦法讀取資訊-->
+			      <input name="email" type="email" class="form-control" id="inputEmail3" placeholder="Email address">
 			    </div>
 			  </div>
 
 			  <div class="form-group">  
-			    <div class="col-sm-12">
-			      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-			    </div>
+				    <div class="col-sm-12">
+				      <input name="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				    </div>
 			  </div>
 
 			  <div class="form-group">  
 			      <div class="col-sm-12">
 			        <label class="pull-left">
-			          <input type="checkbox"> Remember me
+			          <input name="remember" type="checkbox"> Remember me
 			        </label>
 			      </div>
 			  </div>
 
 			  <div class="form-group">
 			    	<p class="col-sm-12">
-			    		<a class="btn btn-lg btn-success btn-block" href="#" role="button" width: "290px";>Sign up</a>
+			    		<button type="submit" class="btn btn-lg btn-success btn-block" >Sign in</button>
 			    	</p>
-			      <!--button type="submit" class="btn btn-default" style="margin-left: 195px;" >Sign in</button-->
 			  </div>
 
 			</form><!--form-->
