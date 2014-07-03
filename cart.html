@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cart</title>
+	<meta charset="UTF-8">
+	<title>sign-up</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	
+
+	<!-- Optional theme -->
+	<!--link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"-->
+	<link rel="stylesheet" href="css/jumbotron-narrow.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	  <div class="header">
+	    <ul class="nav nav-pills pull-right">
+	    	
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="user.html">會員表單</a></li>
+	      <li class="active"><a href="#">購物車表單</a></li>
+	      <li><a href="sign-up.html">登入表單</a></li>
+	     
+	    </ul>
+	    <h3 class="text-muted">購物車表單</h3>
+	  </div>
+		<!--form 從這裡開始-->
+		<div class="jumbotron">
+			<form method="GET" class="form-horizontal row" role="form" style="margin: 0 auto">
+				
+		  			<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th colspan="2">訂購人資料</th>
+								<th colspan="6">收件人資料</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<!-- <th>姓名</th> -->
+								<td>姓名</td>
+								<td>
+									<input type="text" name="name">
+									<div class="checkbox">
+									  <label class="pull-left" style="margin-left:15px;">
+									    <input type="checkbox">同步更新會員資料
+									  </label>
+									</div>
+								</td>
+								<td>自動載入</td>
+								<td>
+									<div class="checkbox">
+									  <label class="pull-left" style="margin-left:15px;">
+									    <input type="checkbox">同訂購人資料
+									  </label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>聯絡信箱</td>
+								<td>
+									<input type="text" name="email">
+								</td>
+								<td>姓名</td>
+								<td>
+									<input type="text" name="name">
+								</td>	
+							</tr>
+							<tr>
+								<td>聯絡電話</td>
+								<td>
+									<input type="text" name="phonenumber">
+								</td>
+								<td>聯絡電話</td>
+								<td>
+									<input type="text" name="phonenumber">
+								</td>
+							</tr>
+							<tr>
+								<td>地址</td>
+								<td>
+									<form>
+										<select class="form-control">
+										　<option>台北市</option>
+										　<option>新北市</option>
+										　<option>新竹市</option>
+										</select> 
+									</form>
+									<form> <!--這部分的地區要怎麼跟著上面選擇的縣市做改變？-->
+										<select class="form-control">
+										　<option>大安區</option>
+										　<option>松山區</option>
+										　<option>南港區</option>
+										</select>
+									</form>
+									<input type="text" name="address">
+								</td>
+								<td>地址</td>
+								<td>
+									<form>
+										<select class="form-control">
+										　<option>台北市</option>
+										　<option>新北市</option>
+										　<option>新竹市</option>
+										</select> 
+									</form>
+									<form>
+										<select class="form-control">
+										　<option>大安區</option>
+										　<option>松山區</option>
+										　<option>南港區</option>
+										</select>
+									</form>
+									<input type="text" name="address">
+								</td>
+							</tr>
+							<tr>
+								<td>訂單發票</td>
+								<td>
+									<form>
+										<select class="form-control">
+										　<option>二聯式發票</option>
+										　<option>三聯式發票</option>
+										　<option>不用，我要捐贈發票</option>
+										</select>
+									</form>
+								</td>	
+								<td>收件時間</td>
+								<td>
+
+								</td>
+							</tr>
+						</tbody>
+					</table><!--寄件人收件人-->
+					
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th colspan="12">發票資料確認</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>姓名</td>
+								<td>
+									<input type="text" name="name">
+									<div class="checkbox" style="margin-left:25px;">
+									  <label class="pull-left">
+									    <input type="checkbox">同訂購人資料
+									  </label>
+									</div>
+									<div class="checkbox" style="margin-left:25px;">
+									  <label class="pull-left">
+									    <input type="checkbox">同收件人資料
+									  </label>
+									</div>
+								</td>
+								<td>地址</td>
+								<td>
+									<form>
+										<select class="form-control" >
+										　<option>台北市</option>
+										　<option>新北市</option>
+										　<option>新竹市</option>
+										</select> 
+									</form>
+									<form> <!--這部分的地區要怎麼跟著上面選擇的縣市做改變？-->
+										<select class="form-control">
+										　<option>大安區</option>
+										　<option>松山區</option>
+										　<option>南港區</option>
+										</select>
+									</form>
+									<input type="text" name="address">
+								</td>
+							</tr>
+						</tbody>
+						
+					</table><!--發票資料-->
+
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th>訂購備註</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><textarea class="form-control" rows="3"></textarea>
+								<!--這段要怎麼變成input那種點下就不見的文字模式？-->
+								</td>	
+							</tr>
+						</tbody>			
+					</table><!--訂購備註-->
+				<div>
+					<p>
+					  <button type="button" class="btn btn-default btn-lg">繼續購物</button>
+					  <button type="button" class="btn btn-primary btn-lg">確認送出</button>
+					</p>
+				</div>
+			</form><!--form-->		
+		</div><!--jumbotron-->
+	</div><!--container-->	
+</body>
+</html>
