@@ -47,10 +47,10 @@
 							<tr>
 								<!-- <th>姓名</th> -->
 								<td>姓名</td>
-								<td>
-									<input type="text" name="name">
+								<td class="col-xs-2">
+									<input type="text" name="name" class="form-control">
 									<div class="checkbox">
-									  <label class="pull-left" style="margin-left:15px;">
+									  <label class="pull-left" style="margin-left:5px;">
 									    <input type="checkbox">同步更新會員資料
 									  </label>
 									</div>
@@ -58,7 +58,7 @@
 								<td>自動載入</td>
 								<td>
 									<div class="checkbox">
-									  <label class="pull-left" style="margin-left:15px;">
+									  <label class="pull-left" style="margin-left:5px;">
 									    <input type="checkbox">同訂購人資料
 									  </label>
 									</div>
@@ -66,27 +66,27 @@
 							</tr>
 							<tr>
 								<td>聯絡信箱</td>
-								<td>
-									<input type="text" name="email">
+								<td class="col-xs-4">
+									<input type="email" name="email" class="form-control">
 								</td>
 								<td>姓名</td>
-								<td>
-									<input type="text" name="name">
+								<td class="col-xs-4">
+									<input type="text" name="name" class="form-control">
 								</td>	
 							</tr>
 							<tr>
 								<td>聯絡電話</td>
-								<td>
-									<input type="text" name="phonenumber">
+								<td class="col-xs-3">
+									<input type="text" name="phonenumber" class="form-control">
 								</td>
 								<td>聯絡電話</td>
-								<td>
-									<input type="text" name="phonenumber">
+								<td class="col-xs-3">
+									<input type="text" name="phonenumber" class="form-control">
 								</td>
 							</tr>
 							<tr>
 								<td>地址</td>
-								<td>
+								<td class="col-xs-3">
 									<form>
 										<select class="form-control">
 										　<option>台北市</option>
@@ -101,10 +101,10 @@
 										　<option>南港區</option>
 										</select>
 									</form>
-									<input type="text" name="address">
+									<input type="text" name="address" class="form-control">
 								</td>
 								<td>地址</td>
-								<td>
+								<td class="col-xs-3" class="form-control">
 									<form>
 										<select class="form-control">
 										　<option>台北市</option>
@@ -119,7 +119,7 @@
 										　<option>南港區</option>
 										</select>
 									</form>
-									<input type="text" name="address">
+									<input type="text" name="address" class="form-control">
 								</td>
 							</tr>
 							<tr>
@@ -135,7 +135,7 @@
 								</td>	
 								<td>收件時間</td>
 								<td>
-
+									<input type="date">
 								</td>
 							</tr>
 						</tbody>
@@ -150,21 +150,21 @@
 						<tbody>
 							<tr>
 								<td>姓名</td>
-								<td>
-									<input type="text" name="name">
-									<div class="checkbox" style="margin-left:25px;">
+								<td class="col-xs-4">
+									<input type="text" name="name" class="form-control">
+									<div class="checkbox" style="margin-left:5px;">
 									  <label class="pull-left">
 									    <input type="checkbox">同訂購人資料
 									  </label>
 									</div>
-									<div class="checkbox" style="margin-left:25px;">
+									<div class="checkbox" style="margin-left:5px;">
 									  <label class="pull-left">
 									    <input type="checkbox">同收件人資料
 									  </label>
 									</div>
 								</td>
 								<td>地址</td>
-								<td>
+								<td class="col-xs-4">
 									<form>
 										<select class="form-control" >
 										　<option>台北市</option>
@@ -179,7 +179,7 @@
 										　<option>南港區</option>
 										</select>
 									</form>
-									<input type="text" name="address">
+									<input type="text" name="address" class="form-control">
 								</td>
 							</tr>
 						</tbody>
@@ -194,17 +194,16 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><textarea class="form-control" rows="3"></textarea>
-								<!--這段要怎麼變成input那種點下就不見的文字模式？-->
+								<td><textarea class="form-control" rows="3" placeholder="若您有任何意見或關於出貨時的需求請在此備註，感謝您。"></textarea>
 								</td>	
 							</tr>
 						</tbody>			
 					</table><!--訂購備註-->
 				<div>
 					<p>
-					  <button type="button" class="btn btn-default btn-lg">繼續購物</button>
-					  <button type="button" class="btn btn-primary btn-lg">確認送出</button>
-					</p>
+					  <button type="submit" class="btn btn-default btn-lg">繼續購物</button>
+					  <button type="submit" class="btn btn-primary btn-lg">確認送出</button>
+					</p>					
 				</div>
 			</form><!--form-->		
 		</div><!--jumbotron-->
