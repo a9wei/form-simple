@@ -17,6 +17,14 @@
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<style>
+	.let-me-inline {
+		display: inline-block;
+		width: auto;
+		margin-left: 16px;
+		margin-bottom: 10px;
+	}
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -39,15 +47,15 @@
 						<thead>
 							<tr>
 								<th colspan="2">訂購人資料</th>
-								<th colspan="6">收件人資料</th>
+								<th colspan="2">收件人資料</th>
 								
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<!-- <th>姓名</th> -->
-								<td>姓名</td>
-								<td class="col-xs-2">
+								<td width="15%">姓名</td>
+								<td  width="35%">
 									<input type="text" name="name" class="form-control">
 									<div class="checkbox">
 									  <label class="pull-left" style="margin-left:5px;">
@@ -55,8 +63,8 @@
 									  </label>
 									</div>
 								</td>
-								<td>自動載入</td>
-								<td>
+								<td  width="15%">自動載入</td>
+								<td  width="35%">
 									<div class="checkbox">
 									  <label class="pull-left" style="margin-left:5px;">
 									    <input type="checkbox">同訂購人資料
@@ -66,59 +74,59 @@
 							</tr>
 							<tr>
 								<td>聯絡信箱</td>
-								<td class="col-xs-4">
+								<td>
 									<input type="email" name="email" class="form-control">
 								</td>
 								<td>姓名</td>
-								<td class="col-xs-4">
+								<td>
 									<input type="text" name="name" class="form-control">
 								</td>	
 							</tr>
 							<tr>
 								<td>聯絡電話</td>
-								<td class="col-xs-3">
+								<td>
 									<input type="text" name="phonenumber" class="form-control">
 								</td>
 								<td>聯絡電話</td>
-								<td class="col-xs-3">
+								<td>
 									<input type="text" name="phonenumber" class="form-control">
 								</td>
 							</tr>
 							<tr>
 								<td>地址</td>
-								<td class="col-xs-3">
-									<form>
-										<select class="form-control">
+								<td>
+									<div class="row">
+										<select class="form-control  col-xs-5 let-me-inline">
 										　<option>台北市</option>
 										　<option>新北市</option>
 										　<option>新竹市</option>
-										</select> 
-									</form>
-									<form> <!--這部分的地區要怎麼跟著上面選擇的縣市做改變？-->
-										<select class="form-control">
+										</select> 									
+									
+										<!--TODO: 這部分的地區要怎麼跟著上面選擇的縣市做改變-->
+										<select class="form-control col-xs-5 let-me-inline">
 										　<option>大安區</option>
 										　<option>松山區</option>
 										　<option>南港區</option>
 										</select>
-									</form>
+										
+									</div>
 									<input type="text" name="address" class="form-control">
 								</td>
 								<td>地址</td>
-								<td class="col-xs-3" class="form-control">
-									<form>
-										<select class="form-control">
+								<td>
+									<div class="row">
+										<select class="form-control col-xs-5 let-me-inline">
 										　<option>台北市</option>
 										　<option>新北市</option>
 										　<option>新竹市</option>
 										</select> 
-									</form>
-									<form>
-										<select class="form-control">
+
+										<select class="form-control col-xs-5 let-me-inline">
 										　<option>大安區</option>
 										　<option>松山區</option>
 										　<option>南港區</option>
 										</select>
-									</form>
+									</div>
 									<input type="text" name="address" class="form-control">
 								</td>
 							</tr>
@@ -144,41 +152,40 @@
 					<table class="table table-bordered table-striped">
 						<thead>
 							<tr>
-								<th colspan="12">發票資料確認</th>
+								<th colspan="4">發票資料確認</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>姓名</td>
-								<td class="col-xs-4">
+								<td width="15%">姓名</td>
+								<td width="35%">
 									<input type="text" name="name" class="form-control">
 									<div class="radio" style="margin-left:5px;">
 									  <label class="pull-left">
-									    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>同訂購人資料
+									    <input type="radio" name="optionsRadios" id="optionsRadios1" value="同訂購人資料" checked>同訂購人資料
 									  </label>
 									</div>
 									<div class="radio" style="margin-left:5px;">
 									  <label class="pull-left">
-									    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">同收件人資料
+									    <input type="radio" name="optionsRadios" id="optionsRadios2" value="同收件人資料">同收件人資料
 									  </label>
 									</div>
 								</td>
-								<td>地址</td>
-								<td class="col-xs-4">
-									<form>
-										<select class="form-control" >
+								<td width="15%">地址</td>
+								<td width="35%">
+									<div class="row">					
+										<select class="form-control col-xs-5 let-me-inline">
 										　<option>台北市</option>
 										　<option>新北市</option>
 										　<option>新竹市</option>
 										</select> 
-									</form>
-									<form> <!--這部分的地區要怎麼跟著上面選擇的縣市做改變？-->
-										<select class="form-control">
+													
+										<select class="form-control col-xs-5 let-me-inline">
 										　<option>大安區</option>
 										　<option>松山區</option>
 										　<option>南港區</option>
 										</select>
-									</form>
+									</div>									
 									<input type="text" name="address" class="form-control">
 								</td>
 							</tr>
